@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   View,
   Text,
@@ -9,11 +9,13 @@ import {
 } from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import data from '../data/submission.json';
 
 const deviceWidth = Dimensions.get('window').width;
 const deviceHeight = Dimensions.get('window').height;
 
 const Search = ({navigation}) => {
+  const [text, setText] = useState('');
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -26,11 +28,23 @@ const Search = ({navigation}) => {
               style={styles.input}
               placeholderTextColor="mintcream"
               placeholder="Phone number"
+              onChangeText={(t) => {
+                setText(t);
+              }}
             />
           </View>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate('Detail')}>
+            onPress={() => {
+              data.forEach((item) => {
+                if (text === item.msisdn) {
+                  navigation.navigate('Detail', {
+                    msisdn: item.msisdn,
+                    label: item.label,
+                  });
+                }
+              });
+            }}>
             <Text style={styles.buttonText}>Search</Text>
           </TouchableOpacity>
         </View>

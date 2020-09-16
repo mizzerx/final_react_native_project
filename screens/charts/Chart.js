@@ -2,12 +2,12 @@ import React from 'react';
 import {View} from 'react-native';
 import {VictoryBar, VictoryChart, VictoryGroup} from 'victory-native';
 
-const Chart = () => {
+const Chart = ({props}) => {
   return (
     <View>
       <VictoryChart>
-        <VictoryGroup>
-          <VictoryBar />
+        <VictoryGroup offset={20}>
+          <VictoryBar data={props.data} />
           <VictoryBar />
         </VictoryGroup>
       </VictoryChart>
