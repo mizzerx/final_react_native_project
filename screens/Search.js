@@ -26,8 +26,8 @@ const Search = ({navigation}) => {
             <AntDesign name="search1" size={24} color="white" />
             <TextInput
               style={styles.input}
-              placeholderTextColor="mintcream"
-              placeholder="Phone number"
+              placeholderTextColor="#00ff7f"
+              placeholder="MSISDN"
               onChangeText={(t) => {
                 setText(t);
               }}
