@@ -9,7 +9,7 @@ const App = () => {
     setTimeout(() => {
       console.log('Wating');
       setCurrentScreen('Login');
-    }, 3000);
+    }, 2000);
   }, []);
 
   let mainScreen = currentScreen === 'Splash' ? <Splash /> : <AllScreen />;

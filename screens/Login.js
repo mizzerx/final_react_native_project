@@ -7,16 +7,21 @@ import {
   ImageBackground,
   Dimensions,
   TextInput,
+  ToastAndroid,
 } from 'react-native';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
+import {useState} from 'react';
 
 const deviceWidth = Dimensions.get('window').width;
 const deviceHeight = Dimensions.get('window').height;
 
 const Login = ({navigation}) => {
   const ref = useRef('txtPwd');
+  const [usr, setUsr] = useState('');
+  const [pwd, setPwd] = useState('');
+
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -31,6 +36,9 @@ const Login = ({navigation}) => {
               placeholder="Username"
               placeholderTextColor="mintcream"
               onSubmitEditing={() => ref.current.focus()}
+              onChangeText={(text) => {
+                setUsr(text);
+              }}
             />
           </View>
           <View style={styles.infoContainer}>
@@ -43,11 +51,24 @@ const Login = ({navigation}) => {
               secureTextEntry
               autoCorrect={false}
               ref={ref}
+              onChangeText={(text) => {
+                setPwd(text);
+              }}
             />
           </View>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate('Search')}>
+            onPress={() => {
+              if (usr != '' && pwd != '') {
+                if (usr === 'admin' && pwd === 'admin') {
+                  navigation.navigate('Search');
+                } else {
+                  ToastAndroid.show('Login failed!', ToastAndroid.LONG);
+                }
+              } else {
+                ToastAndroid.show('Login failed!', ToastAndroid.LONG);
+              }
+            }}>
             <Text style={styles.buttonText}>Login</Text>
           </TouchableOpacity>
         </View>

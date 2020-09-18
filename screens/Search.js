@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import data from '../data/submission.json';
+import data from '../data/loan.json';
 
 const deviceWidth = Dimensions.get('window').width;
 const deviceHeight = Dimensions.get('window').height;
@@ -19,7 +19,7 @@ const Search = ({navigation}) => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require('../assets/background.png')}
+        source={require('../assets/login.png')}
         style={styles.background}>
         <View style={styles.inputContainer}>
           <View style={styles.infoContainer}>
@@ -41,6 +41,7 @@ const Search = ({navigation}) => {
                   navigation.navigate('Detail', {
                     msisdn: item.msisdn,
                     label: item.label,
+                    data: item.data,
                   });
                 }
               });

@@ -1,14 +1,22 @@
 import React from 'react';
 import {View} from 'react-native';
-import {VictoryBar, VictoryChart, VictoryGroup} from 'victory-native';
+import {
+  VictoryAxis,
+  VictoryBar,
+  VictoryChart,
+  VictoryGroup,
+} from 'victory-native';
 
-const Chart = ({props}) => {
+const Chart = (props) => {
   return (
     <View>
-      <VictoryChart>
+      <VictoryChart domainPadding={{x: 30}}>
         <VictoryGroup offset={20}>
-          <VictoryBar data={props.data} />
-          <VictoryBar />
+          <VictoryBar
+            data={props.data}
+            x="time"
+            y="recharge_amount"
+          />
         </VictoryGroup>
       </VictoryChart>
     </View>

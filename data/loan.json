@@ -1,0 +1,102 @@
+[
+  {
+    "msisdn": "000101bf9eb35570d481",
+    "label": 0.9830856973,
+    "data": [
+      {
+        "time": "09-30",
+        "recharge_amount": 20000
+      },
+      {
+        "time": "10-07",
+        "recharge_amount": 20000
+      },
+      {
+        "time": "10-14 ",
+        "recharge_amount": 70000
+      },
+      {
+        "time": "10-21 ",
+        "recharge_amount": 50000
+      },
+      {
+        "time": "10-28 ",
+        "recharge_amount": 50000
+      }
+    ]
+  },
+  {
+    "msisdn": "000114f5f6e5b5b61f19",
+    "label": 0.9832181949,
+    "data": [
+      {
+        "time": "10-21 ",
+        "recharge_amount": 20000
+      },
+      {
+        "time": "09-30 ",
+        "recharge_amount": 150000
+      },
+      {
+        "time": "10-07 ",
+        "recharge_amount": 120000
+      },
+      {
+        "time": "10-14 ",
+        "recharge_amount": 190000
+      },
+      {
+        "time": "10-21 ",
+        "recharge_amount": 150000
+      },
+      {
+        "time": "10-28 ",
+        "recharge_amount": 20000
+      }
+    ]
+  },
+  {
+    "msisdn": "000186d2e3ff4c9bba11",
+    "label": 0.9831204876,
+    "data": [
+      {
+        "time": "10-07 ",
+        "recharge_amount": 20000
+      },
+      {
+        "time": "10-07 ",
+        "recharge_amount": 20000
+      },
+      {
+        "time": "10-14 ",
+        "recharge_amount": 120000
+      }
+    ]
+  },
+  {
+    "msisdn": "0001e52aab3f8723567f",
+    "label": 0.9831121939,
+    "data": [
+      {
+        "time": "09-30 ",
+        "recharge_amount": 60000
+      },
+      {
+        "time": "10-07 ",
+        "recharge_amount": 60000
+      },
+      {
+        "time": "10-14 ",
+        "recharge_amount": 60000
+      },
+      {
+        "time": "10-21 ",
+        "recharge_amount": 120000
+      },
+      {
+        "time": "10-28 ",
+        "recharge_amount": 60000
+      }
+    ]
+  }
+]

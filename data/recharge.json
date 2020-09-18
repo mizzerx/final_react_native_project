@@ -1,0 +1,122 @@
+[
+  {
+    "msisdn": "000114f5f6e5b5b61f19",
+    "label": 0.9832181949,
+    "data": [
+      {
+        "time": "10-21 ",
+        "total_loan_paid": 230000000,
+        "total_transaction": 2
+      },
+      {
+        "time": "10-14 ",
+        "total_loan_paid": 230000000,
+        "total_transaction": 2
+      }
+    ]
+  },
+  {
+    "msisdn": "000186d2e3ff4c9bba11",
+    "label": 0.9831204876,
+    "data": [
+      {
+        "time": "10-14 ",
+        "total_loan_paid": 460000000,
+        "total_transaction": 4
+      },
+      {
+        "time": "10-07 ",
+        "total_loan_paid": 460000000,
+        "total_transaction": 4
+      },
+      {
+        "time": "09-30 ",
+        "total_loan_paid": 460000000,
+        "total_transaction": 4
+      }
+    ]
+  },
+  {
+    "msisdn": "0001e52aab3f8723567f",
+    "label": 0.9831121939,
+    "data": [
+      {
+        "time": "10-21 ",
+        "total_loan_paid": 10350000000,
+        "total_transaction": 90
+      },
+      {
+        "time": "10-14 ",
+        "total_loan_paid": 6210000000,
+        "total_transaction": 54
+      },
+      {
+        "time": "10-28 ",
+        "total_loan_paid": 4140000000,
+        "total_transaction": 36
+      }
+    ]
+  },
+  {
+    "msisdn": "000101bf9eb35570d481",
+    "label": 0.9830856973,
+    "data": [
+      {
+        "time": "10-14 ",
+        "total_loan_paid": 1380000000,
+        "total_transaction": 12
+      },
+      {
+        "time": "09-30 ",
+        "total_loan_paid": 690000000,
+        "total_transaction": 6
+      },
+      {
+        "time": "10-07 ",
+        "total_loan_paid": 690000000,
+        "total_transaction": 6
+      },
+      {
+        "time": "10-21 ",
+        "total_loan_paid": 690000000,
+        "total_transaction": 6
+      },
+      {
+        "time": "10-28 ",
+        "total_loan_paid": 690000000,
+        "total_transaction": 6
+      }
+    ]
+  },
+  {
+    "msisdn": "00013ec6738d31a095ea",
+    "label": 0.9823583118,
+    "data": [
+      {
+        "time": "10-07 ",
+        "total_loan_paid": 7360000000,
+        "total_transaction": 64
+      },
+      {
+        "time": "10-14 ",
+        "total_loan_paid": 5520000000,
+        "total_transaction": 48
+      },
+      {
+        "time": "10-28 ",
+        "total_loan_paid": 1840000000,
+        "total_transaction": 32
+      },
+      {
+        "time": "10-21 ",
+        "total_loan_paid": 3680000000,
+        "total_transaction": 32
+      },
+      {
+        "time": "09-30 ",
+        "total_loan_paid": 3680000000,
+        "total_transaction": 32
+      }
+    ]
+  }
+]
